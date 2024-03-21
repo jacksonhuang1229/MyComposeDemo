@@ -1,4 +1,4 @@
-package com.example.mycomposedemo
+package com.example.mycompose2024
 
 import org.junit.Test
 
