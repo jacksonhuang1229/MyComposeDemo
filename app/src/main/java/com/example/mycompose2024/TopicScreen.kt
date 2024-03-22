@@ -7,9 +7,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 
-class HomeScreen {
+class TopicScreen {
     companion object {
-        const val NAME = "HomeScreen"
+        const val NAME = "TopicScreen"
     }
 
     @Composable
@@ -20,9 +20,9 @@ class HomeScreen {
                 Text(NAME)
                 Button(onClick = {
                     android.util.Log.d("testtttt" , "$NAME onClick $this")
-                    navController.navigate(NewsScreen.NAME)
+                    navController.navigate(HomeScreen.NAME)
                 }) {
-                    Text("Go to ${NewsScreen.NAME}")
+                    Text("Go to ${HomeScreen.NAME}")
                 }
             }
         }

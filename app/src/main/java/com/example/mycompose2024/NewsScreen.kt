@@ -11,18 +11,18 @@ class NewsScreen {
     companion object {
         const val NAME = "NewsScreen"
     }
-}
-@Composable
-fun NewsScreen(navController: NavHostController) {
-    Scaffold() {
-        it
-        Column {
-            Text(NewsScreen.NAME)
-            Button(onClick = {
-                android.util.Log.d("testtttt" , "NewsScreen onClick $this")
-                navController.navigate(HomeScreen.NAME)
-            }) {
-                Text("Go to HomeScreen")
+    @Composable
+    fun Content(navController: NavHostController) {
+        Scaffold() {
+            it
+            Column {
+                Text(NAME)
+                Button(onClick = {
+                    android.util.Log.d("testtttt" , "$NAME onClick $this")
+                    navController.navigate(TopicScreen.NAME)
+                }) {
+                    Text("Go to ${TopicScreen.NAME}")
+                }
             }
         }
     }
